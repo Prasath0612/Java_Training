@@ -15,7 +15,7 @@ class specs_day2
         System.out.println("Processor"+processor);
         System.out.println("Front Camera"+fro_cam);
         System.out.println("Back camera"+back_cam);
-        System.out.println("Storage"+storage;
+        System.out.println("Storage"+storage);
         System.out.println("Ram"+ram); 
     }
 }
