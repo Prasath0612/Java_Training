@@ -2,11 +2,12 @@ class Day3
 {
     public static void main(String args[])
     {
-        consumer com=new consumer(8763,4,"Krishna","Rajini",3,1,20);
-        com.show();
-        consumer.display();
+        admin com=new consumer(8763,4,"Krishna","Rajini",3,1,20);//upcasting
         com.items();
-        consumer.quantity();
+        admin.quantity();
+        consumer co=(consumer) com;//downcasting
+        co.show();
+        consumer.display();
     }
 }
 class admin
