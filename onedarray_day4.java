@@ -1,12 +1,12 @@
 import java .io.*;
 import java.util.*;
-class odarray
+class onedarray_day4
 {
     public static void main(String args[])
     {
         String name;
-        int rollno,max,temp;
-        int marks[]=new int[5];
+        int rollno,max=0,temp=0;
+        int marks[]=new int[3];
         DataInputStream di=new DataInputStream(System.in);
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the name of student:");
@@ -29,12 +29,12 @@ class odarray
         {
             System.out.println("Mark obtained in subject "+i+"is "+marks[i]);
         }
-        for(int i=0;i<marks.length;i++)
+        for(int i=0;i<(marks.length-1);i++)
         {
             if(marks[i+1]>marks[i])
             {
                 max=marks[i+1];
-                temp=i;
+                temp=(i+1);
             }
         }
         System.out.println("");
