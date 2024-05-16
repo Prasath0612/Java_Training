@@ -1,0 +1,26 @@
+import java.util.LinkedList;
+import java.util.Scanner;
+
+class search
+{
+    public static void main(String[] args) {
+        LinkedList li=new LinkedList<>();
+        Scanner sc=new Scanner(System.in);
+         li.add("Star");
+         li.add("Aavesham");
+         li.add("Premalu");
+         li.add("Lover");
+         li.add("Manjummel Boys");
+        System.out.println("Enter the movie want to watch");
+        String mov=sc.nextLine();
+        if(li.contains(mov))
+        {
+            System.out.println(mov+"\t is screening");
+        }
+        else{
+            System.out.println(mov+"\t is not screening");
+        }
+
+       
+    }
+}
